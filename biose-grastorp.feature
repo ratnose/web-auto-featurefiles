@@ -8,7 +8,8 @@ Feature:    Som en besökare på Grästorps biograf.
         When I click on the element ".icon-close-gold"
         Then I expect that element ".main-page__title" is displayed
         When I click on the link "Biografer"
-        Then  I expect that the element "list-view-page" is displayed
+        And I expect that the url is "https://bio.se/biografer"
+        Then I expect that the element "list-view-page" is displayed
 
     Scenario: Hitta Grästorps
         Given I open the url "https://bio.se/biografer"
